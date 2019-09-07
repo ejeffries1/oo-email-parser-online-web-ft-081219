@@ -6,7 +6,7 @@ class EmailAddressParser
   end
   
   def parse
-    @csv.delete(",").split(" ")
+    @csv.uniq
   end
 end
 
