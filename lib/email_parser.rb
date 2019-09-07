@@ -6,9 +6,7 @@ class EmailAddressParser
   end
   
   def parse
-    @csv.collect do |mail|
-      mail.delete(",")
-    end
+    @csv.delete(" ")
   end
 end
 
