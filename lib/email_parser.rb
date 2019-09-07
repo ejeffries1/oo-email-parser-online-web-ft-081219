@@ -6,7 +6,7 @@ class EmailAddressParser
   end
   
   def parse
-    @csv.delete(" ")
+    @csv.delete(" ").split
   end
 end
 
